@@ -1,0 +1,82 @@
+<?php
+
+namespace Air_Notifications;
+
+function get_locations() {
+  $locations = [
+    'default'  => 'Top bar',
+  ];
+
+  return apply_filters( 'air_notifications_locations', $locations );
+}
+
+function show_notifications( $location = null ) {
+  $template_path = locate_template( 'notification-template.php' );
+  if ( empty( $template_path ) ) {
+    $template_path = plugin_dir_path( __FILE__ ) . 'notification-template.php';
+  }
+  $notifications = get_notifications( $location );
+  foreach ( $notifications as $notification ) {
+    include $template_path;
+  }
+}
+
+function get_notifications( $location = null ) {
+  if ( is_admin() ) {
+    return;
+  }
+
+  $current_post_id = get_the_ID();
+  $meta_query = [
+    [
+    'meta_key' => 'stop',
+    'value'    => wp_date( 'Y-m-d H:i:s' ),
+    'compare'  => '>',
+    'type'     => 'DATETIME',
+    ],
+  ];
+
+  if ( $location ) {
+    $meta_query[] = [
+      'meta_key' => 'location',
+      'value'    => $location,
+    ];
+  }
+
+  $notifications_query = new \WP_Query( [
+    'post_type'      => 'air-notification',
+    'posts_per_page' => 100,
+    'meta_query'     => [ $meta_query ],
+  ] );
+
+  $notifications = [];
+  if ( $notifications_query->have_posts() ) {
+    while ( $notifications_query->have_posts() ) {
+      $notifications_query->the_post();
+
+      $start = get_post_meta( get_the_ID(), 'start', true );
+
+      if ( $start > wp_date( 'Y-m-d H:i:s' ) ) {
+        continue;
+      }
+
+      $show_on_pages = get_post_meta( get_the_ID(), 'show_on', true );
+      if ( ! empty( $show_on_pages ) && ! in_array( (string) $current_post_id, $show_on_pages, true ) ) {
+        continue;
+      }
+
+      $notification_temp = [
+        'title'          => get_the_title(),
+        'content'        => get_post_meta( get_the_ID(), 'content', true ),
+        'start'          => $start,
+        'stop'           => get_post_meta( get_the_ID(), 'stop', true ),
+        'is_dismissable' => get_post_meta( get_the_ID(), 'is_dismissable', true ),
+      ];
+
+      $notifications[] = $notification_temp;
+    }
+  }
+  wp_reset_postdata();
+
+  return $notifications;
+} // end get_notifications
