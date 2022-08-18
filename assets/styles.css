@@ -1,4 +1,35 @@
 .air-notification {
+  align-items: center;
+  background-color:#1D2B42;
   display: none;
-  background-color: var(--color-navy);
+  gap: 1rem;
+  height: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.air-notification p {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+}
+
+.air-notification button {
+  background-color: transparent;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 16px;
+  height: 100%;
+  margin-left: auto;
+}
+
+.air-notification button svg {
+  height: 17px;
+  width: 17px;
+  margin-left: 1rem;
+}
+
+.air-notification svg {
+  height: 22.5px;
+  width: auto;
 }
