@@ -29,8 +29,15 @@ include plugin_dir_path( __FILE__ ) . '/acf-field.php';
 add_action( 'init', __NAMESPACE__ . '\register_acf_field' );
 
 include plugin_dir_path( __FILE__ ) . '/helpers.php';
-// add_action( 'template_redirect', __NAMESPACE__ . '\show_notifications' );
 add_action( 'air_notifications_show_notifications', __NAMESPACE__ . '\show_notifications' );
+
+// Enqueue template style
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_scripts' );
+
+function enqueue_scripts() {
+  wp_enqueue_style( 'air-notifications-styles', plugin_dir_url( __FILE__ ) . 'assets/styles.css', [], filemtime( plugin_dir_path( __FILE__ ) . 'assets/styles.css' ) );
+  wp_enqueue_script( 'air-notifications-scripts', plugin_dir_url( __FILE__ ) . 'assets/scripts.js', [], filemtime( plugin_dir_path( __FILE__ ) . 'assets/scripts.js' ), true );
+}
 
 // Adding a notification location
 add_filter( 'air_notifications_locations', function( $locations ) {

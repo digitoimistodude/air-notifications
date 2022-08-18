@@ -11,12 +11,14 @@ function get_locations() {
 }
 
 function show_notifications( $location = null ) {
-  $template_path = locate_template( 'notification-template.php' );
-  if ( empty( $template_path ) ) {
-    $template_path = plugin_dir_path( __FILE__ ) . 'notification-template.php';
-  }
   $notifications = get_notifications( $location );
+
   foreach ( $notifications as $notification ) {
+    $template_path = locate_template( "notification-template-{$notification['location']}.php" );
+    if ( empty( $template_path ) ) {
+      $template_path = plugin_dir_path( __FILE__ ) . 'templates/notification-template-default.php';
+    }
+
     include $template_path;
   }
 }
@@ -66,11 +68,14 @@ function get_notifications( $location = null ) {
       }
 
       $notification_temp = [
+        'id'             => get_the_ID(),
+        'guid'           => crc32( get_the_ID() . get_the_title() . get_post_meta( get_the_ID(), 'content', true ) ),
         'title'          => get_the_title(),
         'content'        => get_post_meta( get_the_ID(), 'content', true ),
         'start'          => $start,
         'stop'           => get_post_meta( get_the_ID(), 'stop', true ),
         'is_dismissable' => get_post_meta( get_the_ID(), 'is_dismissable', true ),
+        'location'       => get_post_meta( get_the_ID(), 'location', true ),
       ];
 
       $notifications[] = $notification_temp;
