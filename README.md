@@ -43,12 +43,12 @@ add_filter( 'air_notifications_disable_css', function() {
 
 ### Custom notification templates
 
-Default notification template can be replaced by your own custom one. You will need to name it like: `notification-template-your-location.php`. So if you are replacing the default location you will need to create file `notification-template-default.php`. These templates need to be saved in the bese of your theme.
+Default notification template can be replaced by your own custom one. You will need to name it like `notification-template-your-location.php`. So if you are replacing the default location you will need to create file `notification-template-default.php`. These templates need to be saved in the bese of your theme.
 
 In these templates you have access to the notification data by `$notification` variable.
 
 If you want to add the ability to dismiss the notification you will need to make sure you do 2 things.
 * Add class `air-notification` to your main wrapper
-* Add data attribute `data-notification-id` to your main wrapper and your button. Value for this should be unique since it will be saved in the users localstorage, when closing a notification.
+* Add data attribute `data-notification-id` to your main wrapper and your button. Value for this should be unique since it will be saved in the users localstorage, when closing a notification. `$notification['guid']` is created just for this use.
 
 Also note that the notifications have and option `is_dismissable`, this can be used to check if your notification needs the button at all.
