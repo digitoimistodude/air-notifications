@@ -1,5 +1,15 @@
 # Air notifications
 
+You need Advanced Custom Fields PRO plugin installed to use this plugin.
+
+Creates a custom post type for notifications and adds following ACF fields for it:
+* Start time
+* End time
+* Content of the notification
+* Allow closing ( used to check if closing button needs to be added )
+* Location ( to have different locations for the notifications on the same page )
+* Show on page ( specifying sertain pages to show the notification on. Notification will be shown on all pages if nothing is selected )
+
 ## Registering a notification locations
 
 By default Air notifications has one default notification locations set. You might want to change its name, since most likely wont match your use case( using Finnish and location at top of the page ). You can also add more locations if you need them. 
@@ -18,7 +28,7 @@ Adding/modifying notification locations is done using filter `air_notifications_
 In order to show notifications on your page, you need to call them in your template. This is done by adding the following action to your template. The action takes notification location as a parameter.
 
 ```php
-    do_action( 'air_notifications_show_notifications', 'your-location' );
+  do_action( 'air_notifications_show_notifications', 'your-location' );
 ```
 
 ## Disabling default notification css
