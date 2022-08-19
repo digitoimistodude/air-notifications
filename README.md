@@ -36,9 +36,7 @@ In order to show notifications on your page, you need to call them in your templ
 If you want to use the default notification template, but dont want to load its css, you can disable it.
 
 ```php
-add_filter( 'air_notifications_disable_css', function() {
-  return true;
-} );
+  add_filter( 'air_notifications_disable_css', '__return_true' );
 ```
 
 ### Custom notification templates
@@ -47,7 +45,8 @@ Default notification template can be replaced by your own custom one. You will n
 
 In these templates you have access to the notification data by `$notification` variable.
 
-If you want to add the ability to dismiss the notification you will need to make sure you do 2 things.
+If you want to add the ability to dismiss the notification you will need to make sure you do 3 things.
+* Make sure your main wrapper by default has `display: none`, this to prevent the notification from appearing and then disappearing if it had already been closed before.
 * Add class `air-notification` to your main wrapper
 * Add data attribute `data-notification-id` to your main wrapper and your button. Value for this should be unique since it will be saved in the users localstorage, when closing a notification. `$notification['guid']` is created just for this use.
 
