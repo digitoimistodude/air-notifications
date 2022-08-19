@@ -4,7 +4,7 @@ namespace Air_Notifications;
 
 function get_locations() {
   $locations = [
-    'default'  => 'Top bar',
+    'default'  => 'Sivun yläreuna',
   ];
 
   return apply_filters( 'air_notifications_locations', $locations );
@@ -14,7 +14,14 @@ function show_notifications( $location = null ) {
   $notifications = get_notifications( $location );
 
   foreach ( $notifications as $notification ) {
+    // Try to get custom template from theme
     $template_path = locate_template( "notification-template-{$notification['location']}.php" );
+    if ( empty( $template_path ) ) {
+      // Try to get custom default template, if location specific wasnt found
+      $template_path = locate_template( 'notification-template-default.php' );
+    }
+
+    // If no custom template was found, use themes template
     if ( empty( $template_path ) ) {
       $template_path = plugin_dir_path( __FILE__ ) . 'templates/notification-template-default.php';
     }

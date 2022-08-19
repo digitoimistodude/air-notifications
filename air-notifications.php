@@ -40,14 +40,3 @@ function enqueue_scripts() {
     wp_enqueue_style( 'air-notifications-styles', plugin_dir_url( __FILE__ ) . 'assets/styles.css', [], filemtime( plugin_dir_path( __FILE__ ) . 'assets/styles.css' ) );
   }
 }
-
-// Adding a notification location
-// add_filter( 'air_notifications_locations', function( $locations ) {
-//   $locations['before-content'] = 'Before Content';
-
-//   return $locations;
-// } );
-
-// add_filter( 'air_notifications_disable_css', function() {
-//   return true;
-// } );
