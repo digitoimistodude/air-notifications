@@ -9,12 +9,12 @@
  * Author URI:        https://dude.fi
  * License:           GPLv3
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
- * Version:           0.1.0
+ * Version:           1.0.0
  */
 
 namespace Air_Notifications;
 
-const PLUGIN_VERSION = '0.1.0';
+const PLUGIN_VERSION = '1.0.0';
 
 /**
  * Register CPT.
