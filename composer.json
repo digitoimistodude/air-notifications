@@ -1,0 +1,19 @@
+{
+  "name": "digitoimistodude/air-notifications",
+  "type": "wordpress-plugin",
+  "description": "Easy way to crete and manage public notifications at the site.",
+  "homepage": "https://https://github.com/digitoimistodude/air-notifications",
+  "keywords": [
+    "wordpress",
+    "plugin"
+  ],
+  "license": "GPL-3.0+",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Digitoimisto Dude Oy",
+      "email": "moro@dude.fi",
+      "homepage": "https://github.com/digitoimistodude"
+    }
+  ]
+}
