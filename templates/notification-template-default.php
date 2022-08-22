@@ -1,7 +1,7 @@
 <div class="air-notification" data-notification-id="notification-<?php echo esc_html( $notification['guid'] ) ?>">
   <?php include plugin_dir_path( __FILE__ ) . '../assets/info-icon.svg'; ?>
   <p>
-    <?php echo esc_html( $notification['content'] ) ?>
+    <?php echo wp_kses_post( wpautop( $notification['content'] ) ) ?>
   </p>
 
   <?php if ( $notification['is_dismissable'] ) : ?>
