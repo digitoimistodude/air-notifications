@@ -2,7 +2,7 @@
 /**
  * @package air-notifications
  *
- * Plugin Name:       Notifications
+ * Plugin Name:       Air notifications
  * Plugin URI:
  * Description:       Easy way to crete and manage public notifications at the site.
  * Author:            Digitoimisto Dude
