@@ -8,7 +8,7 @@ Creates a custom post type for notifications and adds following ACF fields for i
 * Content of the notification
 * Allow closing ( used to check if closing button needs to be added )
 * Location ( to have different locations for the notifications on the same page )
-* Show on page ( specifying sertain pages to show the notification on. Notification will be shown on all pages if nothing is selected )
+* Show on page ( specifying certain pages to show the notification on. Notification will be shown on all pages if nothing is selected )
 
 ## Registering a notification locations
 
