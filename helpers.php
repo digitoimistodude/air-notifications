@@ -15,10 +15,10 @@ function show_notifications( $location = null ) {
 
   foreach ( $notifications as $notification ) {
     // Try to get custom template from theme
-    $template_path = locate_template( "notification-template-{$notification['location']}.php" );
+    $template_path = locate_template( "templates/notification-template-{$notification['location']}.php" );
     if ( empty( $template_path ) ) {
       // Try to get custom default template, if location specific wasnt found
-      $template_path = locate_template( 'notification-template-default.php' );
+      $template_path = locate_template( 'templates/notification-template-default.php' );
     }
 
     // If no custom template was found, use themes template
