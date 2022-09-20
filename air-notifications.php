@@ -4,7 +4,7 @@
  *
  * Plugin Name:       Air notifications
  * Plugin URI:
- * Description:       Easy way to crete and manage public notifications at the site.
+ * Description:       Easy way to create and manage public notifications at the site.
  * Author:            Digitoimisto Dude
  * Author URI:        https://dude.fi
  * License:           GPLv3
