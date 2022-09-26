@@ -50,4 +50,4 @@ If you want to add the ability to dismiss the notification you will need to make
 * Add class `air-notification` to your main wrapper
 * Add data attribute `data-notification-id` to your main wrapper and your button. Value for this should be unique since it will be saved in the users localstorage, when closing a notification. `$notification['guid']` is created just for this use.
 
-Also note that the notifications have and option `is_dismissable`, this can be used to check if your notification needs the button at all.
+Also note that the notifications have an option `is_dismissable`, this can be used to check if your notification needs the button at all.
