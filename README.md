@@ -14,7 +14,7 @@ Creates a custom post type for notifications and adds following ACF fields for i
 
 By default Air notifications has one default notification locations set. You might want to change its name, since most likely wont match your use case( using Finnish and location at top of the page ). You can also add more locations if you need them. 
 
-Adding/modifying notification locations is done using filter `air_notifications_content`.
+Adding/modifying notification locations is done using filter `air_notifications_locations`.
 ```php
   add_filter( 'air_notifications_locations', function( $locations ) {
     $locations['your-location'] = 'Your location';
