@@ -23,7 +23,7 @@ function register_notification_post_type() {
   ];
 
 	$args = [
-		'labels'              => $labels,
+    'labels'              => $labels,
     'hierarchical'        => false,
     'description'         => 'description',
     'taxonomies'          => array(),
@@ -33,7 +33,7 @@ function register_notification_post_type() {
     'show_in_admin_bar'   => true,
     'menu_position'       => null,
     'menu_icon'           => 'dashicons-megaphone',
-    'show_in_nav_menus'   => true,
+    'show_in_nav_menus'   => false,
     'publicly_queryable'  => true,
     'exclude_from_search' => true,
     'has_archive'         => false,
