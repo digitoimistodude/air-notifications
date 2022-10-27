@@ -41,7 +41,7 @@ If you want to use the default notification template, but dont want to load its 
 
 ### Custom notification templates
 
-Default notification template can be replaced by your own custom one. You will need to name it like `notification-template-your-location.php`. So if you are replacing the default location you will need to create file `notification-template-default.php`. These templates need to be saved in the bese of your theme.
+Default notification template can be replaced by your own custom one. You will need to name it like `notification-template-your-location.php`. So if you are replacing the default location you will need to create file `notification-template-default.php`. These templates need to be saved in `yourtheme/templates`.
 
 In these templates you have access to the notification data by `$notification` variable.
 
