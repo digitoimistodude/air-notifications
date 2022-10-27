@@ -7,8 +7,10 @@ notifications.forEach((notification) => {
   }
 
   const button = notification.querySelector('button');
-  button.addEventListener('click', () => {
-    localStorage.setItem(button.dataset.notificationId, true);
-    notification.style.display = 'none';
-  });
+  if (button) {
+    button.addEventListener('click', () => {
+      localStorage.setItem(button.dataset.notificationId, true);
+      notification.style.display = 'none';
+    });
+  }
 });
