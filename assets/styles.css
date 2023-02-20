@@ -1,5 +1,5 @@
 .air-notification {
-  background-color:#1D2B42;
+  background-color:#1d2b42;
   display: none;
 }
 
@@ -17,28 +17,28 @@
 
 .air-notification .container {
   align-items: center;
-  max-width: 1440px;
-  padding-top: .7rem;
-  padding-bottom: .7rem;
   display: flex;
+  gap: .5rem;
+  max-width: 1440px;
+  padding-bottom: .7rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  gap: .5rem;
+  padding-top: .7rem;
 }
 
 .air-notification button {
   background-color: transparent;
   border: 0;
   color: #fff;
-  font-size: 16px;
-  padding: 0;
-  margin-left: auto;
   flex-shrink: 0;
+  font-size: 16px;
+  margin-left: auto;
+  padding: 0;
 }
 
 .air-notification span[aria-hidden="true"] {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: .5rem;
 }
 
@@ -48,8 +48,8 @@
 }
 
 .air-notification svg {
-  height: 22.5px;
-  width: auto;
   color: #fff;
   flex-shrink: 0;
+  height: 22.5px;
+  width: auto;
 }

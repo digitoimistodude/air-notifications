@@ -1,0 +1,23 @@
+{
+  "name": "air-notifications",
+  "version": "1.0.0",
+  "description": "You need Advanced Custom Fields PRO plugin installed to use this plugin.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitoimistodude/air-notifications.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digitoimistodude/air-notifications/issues"
+  },
+  "homepage": "https://github.com/digitoimistodude/air-notifications#readme",
+  "devDependencies": {
+    "stylelint": "^15.2.0",
+    "stylelint-order": "^6.0.2"
+  }
+}
