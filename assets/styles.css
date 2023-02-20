@@ -6,7 +6,7 @@
   --air-notification-size-close-icon: 17px;
   --air-notification-width-container: 1440px;
   --air-notification-font-size: 16px;
-  --air-notification-gap-close-icon: 5px;
+  --air-notification-gap-close-icon: 10px;
 }
 
 .air-notification {

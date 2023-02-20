@@ -1,3 +1,7 @@
+### 1.0.2: 2023-02-20
+
+* Increase default --air-notification-gap-close-icon
+
 ### 1.0.1: 2023-02-20
 
 * Open CHANGELOG.md
