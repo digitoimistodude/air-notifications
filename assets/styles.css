@@ -1,55 +1,63 @@
+:root {
+  --air-notification-color-background: #1d2b42;
+  --air-notification-color-text: #fff;
+  --air-notification-color-icon: #fff;
+  --air-notification-gap: 20px;
+  --air-notification-size-close-icon: 17px;
+  --air-notification-width-container: 1440px;
+  --air-notification-font-size: 16px;
+  --air-notification-gap-close-icon: 5px;
+}
+
 .air-notification {
-  background-color:#1d2b42;
+  background-color: var(--air-notification-color-background);
   display: none;
 }
 
 .air-notification p {
   color: #fff;
-  font-size: 16px;
+  font-size: var(--air-notification-font-size);
   margin: 0;
 }
 
 .air-notification a {
-  color: #fff;
+  color: var(--air-notification-color-text);
   text-decoration: underline;
-  text-underline-offset: .4rem;
+  text-underline-offset: 4px;
 }
 
 .air-notification .container {
   align-items: center;
   display: flex;
-  gap: .5rem;
-  max-width: 1440px;
-  padding-bottom: .7rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: .7rem;
+  gap: var(--air-notification-gap);
+  max-width: var(--air-notification-width-container);
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
 }
 
 .air-notification button {
   background-color: transparent;
   border: 0;
-  color: #fff;
+  color: var(--air-notification-color-text);
   flex-shrink: 0;
   font-size: 16px;
   margin-left: auto;
   padding: 0;
 }
 
+.air-notification button:hover {
+  cursor: pointer;
+}
+
 .air-notification span[aria-hidden="true"] {
   align-items: center;
   display: flex;
-  gap: .5rem;
+  gap: var(--air-notification-gap-close-icon);
 }
 
 .air-notification button svg {
-  height: 17px;
-  width: 17px;
-}
-
-.air-notification svg {
-  color: #fff;
-  flex-shrink: 0;
-  height: 22.5px;
-  width: auto;
+  height: var(--air-notification-size-close-icon);
+  width: var(--air-notification-size-close-icon);
 }
