@@ -9,12 +9,12 @@
  * Author URI:        https://dude.fi
  * License:           GPLv3
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
- * Version:           1.0.2
+ * Version:           1.0.3
  */
 
 namespace Air_Notifications;
 
-const PLUGIN_VERSION = '1.0.2';
+const PLUGIN_VERSION = '1.0.3';
 
 /**
  * Register CPT.
@@ -40,3 +40,11 @@ function enqueue_scripts() {
     wp_enqueue_style( 'air-notifications-styles', plugin_dir_url( __FILE__ ) . 'assets/styles.css', [], filemtime( plugin_dir_path( __FILE__ ) . 'assets/styles.css' ) );
   }
 }
+
+/**
+ * Load translations
+ */
+add_action( 'plugins_loaded', function() {
+  $plugin_path = '/air-notifications/languages/';
+  load_plugin_textdomain( 'air_notifications', false, $plugin_path );
+} );

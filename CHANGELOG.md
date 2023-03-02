@@ -1,3 +1,7 @@
+### 1.0.3: 2023-03-02
+
+* Added english translations
+
 ### 1.0.2: 2023-02-20
 
 * Increase default --air-notification-gap-close-icon
