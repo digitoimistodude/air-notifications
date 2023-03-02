@@ -1,3 +1,7 @@
+### 1.0.4: 2023-03-02
+
+* Added en_GB tranlations
+
 ### 1.0.3: 2023-03-02
 
 * Added english translations
