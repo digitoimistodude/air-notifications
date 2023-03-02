@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Air notifications\n"
+"POT-Creation-Date: 2023-03-02 12:22+0200\n"
+"PO-Revision-Date: 2023-03-02 12:22+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: cpt-settings.php:11 cpt-settings.php:22
+msgid "Notifications"
+msgstr "Ilmoitukset"
+
+#: cpt-settings.php:12
+msgid "Notification"
+msgstr "Ilmoitus"
+
+#: cpt-settings.php:13 cpt-settings.php:14
+msgid "Add new notification"
+msgstr "Lisää uusi ilmoitus"
+
+#: cpt-settings.php:15
+msgid "Edit notification"
+msgstr "Muokkaa ilmoitusta"
+
+#: cpt-settings.php:16
+msgid "New notification"
+msgstr "Uusi ilmoitus"
+
+#: cpt-settings.php:17
+msgid "View notification"
+msgstr "Näytä ilmoitus"
+
+#: cpt-settings.php:18
+msgid "Search notifications"
+msgstr "Hae ilmoituksia"
+
+#: cpt-settings.php:19
+msgid "Notification not found"
+msgstr "Ilmoituksia ei löytynyt"
+
+#: cpt-settings.php:20
+msgid "Notification not found in trash"
+msgstr "Ilmoituksia ei löytynyt roskakorista"
+
+#: cpt-settings.php:21
+msgid "Notification parent"
+msgstr "Ilmoituksen vanhempi"

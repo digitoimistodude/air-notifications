@@ -1,3 +1,8 @@
+### 1.0.5: 2023-03-02
+
+* Fixed languages
+* Set default language to english
+
 ### 1.0.4: 2023-03-02
 
 * Added en_GB tranlations

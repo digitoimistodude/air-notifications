@@ -9,12 +9,12 @@
  * Author URI:        https://dude.fi
  * License:           GPLv3
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
- * Version:           1.0.4
+ * Version:           1.0.5
  */
 
 namespace Air_Notifications;
 
-const PLUGIN_VERSION = '1.0.4';
+const PLUGIN_VERSION = '1.0.5';
 
 /**
  * Register CPT.
@@ -45,6 +45,6 @@ function enqueue_scripts() {
  * Load translations
  */
 add_action( 'plugins_loaded', function() {
-  $plugin_path = '/air-notifications/languages/';
-  load_plugin_textdomain( 'air_notifications', false, $plugin_path );
+  $plugin_path = dirname( plugin_basename( __FILE__ ) ) . '/languages';
+  load_plugin_textdomain( 'air-notifications', false, $plugin_path );
 } );

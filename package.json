@@ -1,6 +1,6 @@
 {
   "name": "air-notifications",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "You need Advanced Custom Fields PRO plugin installed to use this plugin.",
   "main": "index.js",
   "scripts": {

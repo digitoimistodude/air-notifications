@@ -8,18 +8,18 @@ namespace Air_Notifications;
 // Register Custom Post Type
 function register_notification_post_type() {
   $labels = [
-		'name'               => __( 'Ilmoitukset', 'air-notifications' ),
-    'singular_name'      => __( 'Ilmoitus', 'air-notifications' ),
-    'add_new'            => __( 'Lisää uusi ilmoitus', 'air-notifications' ),
-    'add_new_item'       => __( 'Lisää uusi ilmoitus', 'air-notifications' ),
-    'edit_item'          => __( 'Muokkaa ilmoitusta', 'air-notifications' ),
-    'new_item'           => __( 'Uusi ilmoitus', 'air-notifications' ),
-    'view_item'          => __( 'Näytä ilmoitus', 'air-notifications' ),
-    'search_items'       => __( 'Hae ilmoituksia', 'air-notifications' ),
-    'not_found'          => __( 'Ilmoituksia ei löytynyt', 'air-notifications' ),
-    'not_found_in_trash' => __( 'Ilmoituksia ei löytynyt roskakorista', 'air-notifications' ),
-    'parent_item_colon'  => __( 'Ilmoituksen vanhempi', 'air-notifications' ),
-    'menu_name'          => __( 'Ilmoitukset', 'air-notifications' ),
+		'name'               => __( 'Notifications', 'air-notifications' ),
+    'singular_name'      => __( 'Notification', 'air-notifications' ),
+    'add_new'            => __( 'Add new notification', 'air-notifications' ),
+    'add_new_item'       => __( 'Add new notification', 'air-notifications' ),
+    'edit_item'          => __( 'Edit notification', 'air-notifications' ),
+    'new_item'           => __( 'New notification', 'air-notifications' ),
+    'view_item'          => __( 'View notification', 'air-notifications' ),
+    'search_items'       => __( 'Search notifications', 'air-notifications' ),
+    'not_found'          => __( 'Notification not found', 'air-notifications' ),
+    'not_found_in_trash' => __( 'Notification not found in trash', 'air-notifications' ),
+    'parent_item_colon'  => __( 'Notification parent', 'air-notifications' ),
+    'menu_name'          => __( 'Notifications', 'air-notifications' ),
   ];
 
 	$args = [
