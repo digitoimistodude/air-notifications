@@ -2,6 +2,18 @@
 
 namespace Air_Notifications;
 
+add_filter( 'air_helper_acf_groups_to_warn_about', function( $groups ) {
+  foreach ( $groups as $k => $g ) {
+    if ( 'group_62fa33923832f' !== $g['key'] ) {
+      continue;
+    }
+
+    unset( $groups[ $k ] );
+  }
+
+  return $groups;
+} );
+
 function register_acf_field() {
     if ( function_exists( 'acf_add_local_field_group' ) ) {
         acf_add_local_field_group( [

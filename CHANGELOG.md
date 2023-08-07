@@ -1,3 +1,7 @@
+### 1.0.6: 2023-08-07
+
+* Ignore ACF field group on Air Helper local JSON checks and warnings
+
 ### 1.0.5: 2023-03-02
 
 * Fixed languages
