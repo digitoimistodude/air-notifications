@@ -1,0 +1,110 @@
+# Copyright (C) 2025 Digitoimisto Dude
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Air notifications 1.0.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/air-notifications\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-08-08T10:04:02+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: air-notifications\n"
+
+#. Plugin Name of the plugin
+#: air-notifications.php
+msgid "Air notifications"
+msgstr ""
+
+#. Description of the plugin
+#: air-notifications.php
+msgid "Easy way to create and manage public notifications at the site."
+msgstr ""
+
+#. Author of the plugin
+#: air-notifications.php
+msgid "Digitoimisto Dude"
+msgstr ""
+
+#. Author URI of the plugin
+#: air-notifications.php
+msgid "https://dude.fi"
+msgstr ""
+
+#: acf-field.php:21
+#: cpt-settings.php:12
+msgid "Notification"
+msgstr ""
+
+#: acf-field.php:25
+msgid "Start"
+msgstr ""
+
+#: acf-field.php:43
+msgid "End"
+msgstr ""
+
+#: acf-field.php:61
+msgid "Content"
+msgstr ""
+
+#: acf-field.php:81
+msgid "Allow dismiss"
+msgstr ""
+
+#: acf-field.php:101
+msgid "Location"
+msgstr ""
+
+#: acf-field.php:124
+msgid "Show on page"
+msgstr ""
+
+#: acf-field.php:127
+msgid "If a page is selected, notifications is shown only on that page. If no pages are selected notification is shown on all pages."
+msgstr ""
+
+#: cpt-settings.php:11
+#: cpt-settings.php:22
+msgid "Notifications"
+msgstr ""
+
+#: cpt-settings.php:13
+#: cpt-settings.php:14
+msgid "Add new notification"
+msgstr ""
+
+#: cpt-settings.php:15
+msgid "Edit notification"
+msgstr ""
+
+#: cpt-settings.php:16
+msgid "New notification"
+msgstr ""
+
+#: cpt-settings.php:17
+msgid "View notification"
+msgstr ""
+
+#: cpt-settings.php:18
+msgid "Search notifications"
+msgstr ""
+
+#: cpt-settings.php:19
+msgid "Notification not found"
+msgstr ""
+
+#: cpt-settings.php:20
+msgid "Notification not found in trash"
+msgstr ""
+
+#: cpt-settings.php:21
+msgid "Notification parent"
+msgstr ""
+
+#: helpers.php:7
+msgid "Top of page"
+msgstr ""

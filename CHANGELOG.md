@@ -1,3 +1,7 @@
+### 1.0.7: 2025-08-08
+
+* Add translations for ACF fields
+
 ### 1.0.6: 2023-08-07
 
 * Ignore ACF field group on Air Helper local JSON checks and warnings

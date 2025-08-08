@@ -1,8 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Air notifications\n"
-"POT-Creation-Date: 2023-03-02 12:22+0200\n"
-"PO-Revision-Date: 2023-03-02 12:22+0200\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/air-"
+"notifications\n"
+"POT-Creation-Date: 2025-08-08T10:04:02+00:00\n"
+"PO-Revision-Date: 2025-08-08 13:04+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -15,13 +17,65 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#. Plugin Name of the plugin
+#: air-notifications.php
+msgid "Air notifications"
+msgstr ""
+
+#. Description of the plugin
+#: air-notifications.php
+msgid "Easy way to create and manage public notifications at the site."
+msgstr ""
+
+#. Author of the plugin
+#: air-notifications.php
+msgid "Digitoimisto Dude"
+msgstr ""
+
+#. Author URI of the plugin
+#: air-notifications.php
+msgid "https://dude.fi"
+msgstr ""
+
+#: acf-field.php:21 cpt-settings.php:12
+msgid "Notification"
+msgstr "Ilmoitus"
+
+#: acf-field.php:25
+msgid "Start"
+msgstr "Aloitus"
+
+#: acf-field.php:43
+msgid "End"
+msgstr "Lopetus"
+
+#: acf-field.php:61
+msgid "Content"
+msgstr "Sisältö"
+
+#: acf-field.php:81
+msgid "Allow dismiss"
+msgstr "Salli sulkeminen"
+
+#: acf-field.php:101
+msgid "Location"
+msgstr "Sijainti"
+
+#: acf-field.php:124
+msgid "Show on page"
+msgstr "Näytä sivulla"
+
+#: acf-field.php:127
+msgid ""
+"If a page is selected, notifications is shown only on that page. If no pages "
+"are selected notification is shown on all pages."
+msgstr ""
+"Jos tähän valitaan sivuja, ilmoitus näytetään vain kyseisillä sivuilla. Jos "
+"yhtään sivua ei valita ilmoitus näytetään kaikilla sivuilla."
+
 #: cpt-settings.php:11 cpt-settings.php:22
 msgid "Notifications"
 msgstr "Ilmoitukset"
-
-#: cpt-settings.php:12
-msgid "Notification"
-msgstr "Ilmoitus"
 
 #: cpt-settings.php:13 cpt-settings.php:14
 msgid "Add new notification"
@@ -54,3 +108,7 @@ msgstr "Ilmoituksia ei löytynyt roskakorista"
 #: cpt-settings.php:21
 msgid "Notification parent"
 msgstr "Ilmoituksen vanhempi"
+
+#: helpers.php:7
+msgid "Top of page"
+msgstr "Sivun yläreuna"

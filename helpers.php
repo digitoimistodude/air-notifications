@@ -4,7 +4,7 @@ namespace Air_Notifications;
 
 function get_locations() {
   $locations = [
-    'default'  => 'Sivun yläreuna',
+    'default'  => __( 'Top of page', 'air-notifications' ),
   ];
 
   return apply_filters( 'air_notifications_locations', $locations );
