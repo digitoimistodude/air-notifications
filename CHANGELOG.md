@@ -1,3 +1,6 @@
+### 1.0.8: 2025-04-28
+* Add product as an option for product post type. Ref: PIEN-1995
+
 ### 1.0.7: 2025-08-08
 
 * Add translations for ACF fields

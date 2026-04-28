@@ -135,6 +135,7 @@ function register_acf_field() {
                     'post_type' => [
                         0 => 'post',
                         1 => 'page',
+                        2 => 'product',
                     ],
                     'taxonomy' => '',
                     'filters' => [
