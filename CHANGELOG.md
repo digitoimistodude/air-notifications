@@ -1,3 +1,7 @@
+### 1.0.9: 2026-09-02
+
+* Return an empty list from get_notifications in admin, Ref: UP-591
+
 ### 1.0.8: 2025-04-28
 * Add product as an option for product post type. Ref: PIEN-1995
 

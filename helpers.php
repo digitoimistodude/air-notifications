@@ -32,7 +32,9 @@ function show_notifications( $location = null ) {
 
 function get_notifications( $location = null ) {
   if ( is_admin() ) {
-    return;
+    // Callers iterate the result directly, so the admin case returns an empty
+    // list rather than null.
+    return [];
   }
 
   $current_post_id = get_the_ID();
